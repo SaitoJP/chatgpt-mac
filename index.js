@@ -1,4 +1,4 @@
-require("update-electron-app")();
+// TODO: require("update-electron-app")();
 
 const { menubar } = require("menubar");
 const Nucleus = require("nucleus-analytics");
@@ -43,7 +43,6 @@ app.on("ready", () => {
 
   mb.on("ready", () => {
     const { window } = mb;
-
 
     if (process.platform !== "darwin") {
       window.setSkipTaskbar(true);
